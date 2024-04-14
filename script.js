@@ -1,6 +1,6 @@
 const emailInput = document.querySelector(".input-wrapper input");
-const btnGetStarted = document.querySelector(".input-wrapper button");
-const form = document.querySelector(".input-wrapper");
+const btnGetStarted = document.querySelector(".form button");
+const form = document.querySelector(".form");
 
 const validateEmail = function (email) {
   if (email.indexOf("@") === -1 || typeof email !== "string") return false;

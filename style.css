@@ -386,31 +386,39 @@ body {
   line-height: 1.35;
 }
 
-.cta .input-wrapper {
+.cta .form {
   display: flex;
   gap: 3rem;
   justify-content: center;
   position: relative;
 }
 
-.cta .input-wrapper .error-msg {
+.cta .form .input-wrapper {
+  position: relative;
+}
+
+.cta .form .error-msg {
   position: absolute;
-  bottom: -112%;
-  left: 5%;
+  bottom: -103.5%;
+  left: 7.5%;
   font-size: 1.25rem;
   color: var(--light-red);
   opacity: 0;
 }
 
-.cta input {
+.cta .input-wrapper {
   flex: 70%;
+}
+
+.cta input {
+  width: 100%;
   border-radius: 10rem;
   font-size: 1.75rem;
   border: 1px solid transparent;
   padding: 1.75rem 3.5rem;
 }
 
-.cta .input-wrapper input.error ~ .error-msg {
+.cta .form input.error ~ .error-msg {
   /* display: block; */
   opacity: 1;
 }
@@ -867,29 +875,28 @@ body {
     margin-bottom: 4rem;
   }
 
-  .cta .input-wrapper {
+  .cta .form {
     flex-direction: column;
     gap: 3rem;
     justify-content: center;
   }
 
-  .cta .input-wrapper .error-msg {
-    position: absolute;
-    bottom: -112%;
+  .cta .input-wrapper {
+    margin-bottom: 0.5rem;
+  }
+
+  .cta .form .error-msg {
+    bottom: -103%;
     left: 5%;
-    font-size: 1.25rem;
-    color: var(--light-red);
-    opacity: 0;
+  }
+
+  .cta .input-wrapper {
+    flex: 1;
   }
 
   .cta input {
-    flex: 1;
     font-size: 1.75rem;
     padding: 1.75rem 3.5rem;
-  }
-
-  .cta .input-wrapper input.error ~ .error-msg {
-    opacity: 1;
   }
 
   .cta button {
@@ -916,6 +923,11 @@ body {
     max-width: calc(100% - 1rem);
     padding: 2.5rem;
     padding-top: 4rem;
+  }
+
+  .cta .form .error-msg {
+    bottom: -104%;
+    left: 5%;
   }
 
   .footer {
