@@ -516,6 +516,7 @@ body {
   display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
+  color: var(--white);
 }
 
 .footer-nav {
