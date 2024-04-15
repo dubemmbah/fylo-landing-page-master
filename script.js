@@ -1,6 +1,7 @@
 const emailInput = document.querySelector(".input-wrapper input");
 const btnGetStarted = document.querySelector(".form button");
 const form = document.querySelector(".form");
+const popup = document.querySelector(".popup");
 
 const validateEmail = function (email) {
   if (email.indexOf("@") === -1 || typeof email !== "string") return false;
@@ -33,8 +34,25 @@ form.addEventListener("submit", (e) => {
   if (!validateEmail(emailInput.value)) {
     emailInput.classList.add("error");
     console.log("error class");
-  } else {
+  }
+
+  if (validateEmail(emailInput.value)) {
     emailInput.classList.remove("error");
+
+    // Clear email input field
+    emailInput.value = "";
+
+    // Remove focus
+    emailInput.blur();
+
+    // Remove .show class from thankyou message
+    popup.classList.remove("show");
+
+    // Trigger reflow i.e., force browser to recalculate position and place in initial position
+    void popup.offsetWidth;
+
+    // Add .show class
+    popup.classList.add("show");
   }
 });
 

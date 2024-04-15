@@ -24,10 +24,28 @@
 
     <title>Fylo landing page with dark theme and features grid</title>
 
-    <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+    <style>
+      .attribution {
+        position: absolute;
+        bottom: 0.25%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: auto;
+        font-size: 14px;
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        opacity: 0.7;
+      }
+      .attribution a {
+        color: hsl(176, 68%, 60%);
+        font-weight: bolder;
+        text-decoration: none;
+      }
+
+      .attribution a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -299,6 +317,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- THANK YOU MESSAGE -->
+    <div class="popup">
+      Thanks for the sign up! We have sent a message to your email.
+    </div>
+
+    <!--  -->
+    <div class="attribution">
+      Developed by
+      <a href="https://www.github.com/dubemmbah/">Chukwudubem Mbah</a>.
+    </div>
 
     <!-- <footer>
       <p class="attribution">
