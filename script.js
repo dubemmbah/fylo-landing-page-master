@@ -57,3 +57,7 @@ form.addEventListener("submit", (e) => {
 });
 
 // emailInput.addEventListener("input", validateEmail);
+
+window.onload = function () {
+  window.scrollTo(0, 0);
+};

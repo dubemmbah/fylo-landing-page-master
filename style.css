@@ -519,6 +519,11 @@ body {
   color: var(--white);
 }
 
+.footer .contact .tel p {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .footer-nav {
   margin-left: 2rem;
 }
