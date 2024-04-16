@@ -58,6 +58,9 @@ form.addEventListener("submit", (e) => {
 
 // emailInput.addEventListener("input", validateEmail);
 
-window.onload = function () {
+const scrollToTop = function () {
   window.scrollTo(0, 0);
 };
+
+window.onload = scrollToTop;
+window.addEventListener("pageshow", scrollToTop);
